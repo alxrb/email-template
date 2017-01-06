@@ -55,10 +55,7 @@
       /* GENERAL STYLES */
       td[class*="mobile-center-align"]{ text-align: center !important; }
       br[class*="desktop-break"]      { display: none; }
-      td[class="logo"]{
-        text-align: left;
-        padding: 30px 15px !important;
-      }
+      img[class*="logo-se"]           { width: 100px; }
 
     }
   </style>
@@ -68,7 +65,7 @@
   <!-- TOP BAR -->
   <table border="0" cellpadding="0" cellspacing="0" width="100%">
     <tr>
-      <td bgcolor="#ffffff" align="center" style="padding: 15px 0 15px;">
+      <td bgcolor="#000000" align="center" style="padding: 10px 0; border-bottom: 1px solid #444444;">
         <!-- HIDDEN PREHEADER TEXT -->
         <div style="display: none; font-size: 1px; color: #000000; line-height: 1px; font-family: Helvetica, Arial, sans-serif, 'Open Sans'; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden;">
           !!! email-heading !!!
@@ -79,9 +76,9 @@
             <td>
               <table width="100%" border="0" cellspacing="0" cellpadding="0">
                 <tr>
-                  <td align="center" style="font-size: 10px; font-family: Helvetica, Arial, sans-serif, 'Open Sans'; font-weight: 300; color: #000000;">
+                  <td align="center" style="font-size: 10px; font-family: Helvetica, Arial, sans-serif, 'Open Sans'; font-weight: 400; color: #ffffff;">
                     If you can’t read this email, please
-                    <a href="%%view_email_url%%" style="text-decoration: none; color: #ff8c00; font-weight: 400;">view online</a>
+                    <a href="%%view_email_url%%" style="text-decoration: none; color: #ffffff; font-weight: 700;">view online</a>
                   </td>
                 </tr>
               </table>
@@ -97,22 +94,22 @@
   <!-- LOGO HEADER -->
   <table border="0" cellpadding="0" cellspacing="0" width="100%">
     <tr>
-      <td bgcolor="#f1f1f2">
+      <td bgcolor="#000000">
         <div align="center" style="padding: 0;">
           <table border="0" cellpadding="0" cellspacing="0" width="600" class="wrapper">
             <!-- LOGO/PREHEADER TEXT -->
             <tr>
-              <td style="padding: 40px 25px;" class="logo">
+              <td style="padding: 20px 15px;" class="logo">
                 <table border="0" cellpadding="0" cellspacing="0" width="100%">
                   <tr>
-                    <td width="300" align="left">
+                    <td width="285" align="left">
                       <a href="http://www.secretescapes.com/current-sales?email=%%EMAIL%%&code=%%REFERENCE%%&utm_source=secretescapes&utm_medium=email&utm_campaign=%%=v(@campaign)=%%%%=v(@GA)=%%">
-                        <img alt="Secret Escapes Logo" src="img/logo-secret-escapes.png" width="120" style="display:block; padding: 5px 0 0;" border="0" />
+                        <img class="logo-se" alt="Secret Escapes Logo" src="img/logo-secret-escapes.png" width="120" style="display:block; padding: 5px 0 0;" border="0" />
                       </a>
                     </td>
-                    <td width="300" align="right">
+                    <td width="285" align="right">
                       <a href="#campaign-link">
-                        <img alt="Partner Logo" src="img/logo-secret-escapes.png" width="120"  style="display:block; padding: 5px 0 0;" border="0" />
+                        <img class="logo-se" alt="Partner Logo" src="img/logo-secret-escapes.png" width="120"  style="display:block; padding: 5px 0 0;" border="0" />
                       </a>
                     </td>
                   </tr>
@@ -126,23 +123,46 @@
   </table>
 
 
+  <!-- FULL WIDTH BANNER -->
+  <table border="0" cellpadding="0" cellspacing="0" width="100%" height="350">
+    <tr>
+      <td align="center" background="img/bg.jpg" bgcolor="#333333" valign="middle" style="vertical-align: middle; background-position: center; -webkit-background-size: cover; background-size: cover; ">
+        <!--[if gte mso 9]>
+        <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="mso-width-percent:1000;height:350px;">
+          <v:fill type="frame" src="img/bg.jpg" color="#333333" />
+          <v:textbox inset="0,0,0,0">
+        <![endif]-->
+        <table align="center" border="0" cellpadding="0" cellspacing="0" width="600" class="responsive-table" height="350">
+          <tr>
+            <td style="padding: 140px 15px;"><!-- top & bottom padding is total height - image height fallback is needed for clients that dont support vertical align -->
+              <table align="center" cellspacing="0" cellpadding="0" border="0" width="570" class="responsive-table">
+                <tr>
+                  <td valign="middle" style="vertical-align:middle;" align="center">
+                    <img src="img/title.png" alt="Title" width="570" class="img-max" />
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+        <!--[if gte mso 9]>
+            </v:textbox>
+          </v:rect>
+          <![endif]-->
+      </td>
+    </tr>
+  </table>
+
+
 
   <!-- EMAIL INTRO - STANDARD -->
   <table border="0" cellpadding="0" cellspacing="0" width="100%">
     <tr>
-      <td bgcolor="#f1f1f2" align="center" style="padding: 0 0 30px;">
+      <td bgcolor="#ffffff" align="center" style="padding: 30px 0;">
         <table border="0" cellpadding="0" cellspacing="0" width="600" class="responsive-table">
           <tr>
             <td>
-              <!-- HERO IMAGE -->
-              <table bgcolor="#ffffff" width="100%" border="0" cellspacing="0" cellpadding="0" style="border-radius: 4px;">
-                <tr>
-                  <td style="padding-bottom: 30px;">
-                    <a href="#campaign-link">
-                      <img src="img/main-img.jpg" width="600"  border="0" alt="" style="display: block; border-top-left-radius: 4px; border-top-right-radius: 4px;" class="img-max" />
-                    </a>
-                  </td>
-                </tr>
+              <table width="100%" border="0" cellspacing="0" cellpadding="0">
                 <tr>
                   <td>
                     <!-- COPY -->
@@ -188,7 +208,7 @@
                     <!-- BULLETPROOF BUTTON -->
                     <table width="100%" border="0" cellspacing="0" cellpadding="0" class="mobile-button-container">
                       <tr>
-                        <td align="center" style="padding: 30px 0 30px; border-top: 1px solid #ececec;">
+                        <td align="center" style="padding: 0 0 30px;">
                           <table border="0" cellspacing="0" cellpadding="0" class="responsive-table">
                             <tr>
                               <td align="center">
@@ -214,7 +234,7 @@
 
 
 <!-- SALE CARD - SMALL -->
-<table bgcolor="#f1f1f2" border="0" cellpadding="0" cellspacing="0" width="100%">
+<table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="100%">
   <tr>
     <td align="center" style="padding-bottom: 30px;">
       <table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="600" class="responsive-table" style="border-radius: 4px;">
@@ -281,26 +301,10 @@
 <!-- SALE CARD - LARGE -->
 <table border="0" cellpadding="0" cellspacing="0" width="100%">
   <tr>
-    <td bgcolor="#f1f1f2" align="center" style="padding: 0 0 30px;">
+    <td bgcolor="#ffffff" align="center" style="padding: 0 0 30px;">
       <table border="0" cellpadding="0" cellspacing="0" width="600" class="responsive-table">
         <tr>
-          <td bgcolor="#f1f1f2">
-            <!-- START - bulletproof hr -->
-            <table width="100%" border="0" cellspacing="0" cellpadding="0">
-              <tr>
-                <td align="center">
-                  <table align="center" width="100" border="0" cellspacing="0" cellpadding="0"  style="height:60px;">
-                    <tr>
-                      <td align="center" style="background:none; border-bottom: 1px solid #c1c1c2; height:30px; width:100px; margin-top:0; margin-bottom:0; margin-left:auto; margin-right:auto; padding:0; line-height:0;"><div style="width:100px;"></div></td>
-                    </tr>
-                    <tr>
-                      <td align="center" style="background:none; height:30px; width:100px; margin:0; padding:0; line-height:0;"></td>
-                    </tr>
-                  </table>
-                </td>
-              </tr>
-            </table>
-            <!-- END - bulletproof hr -->
+          <td bgcolor="#ffffff">
             <table bgcolor="#ffffff" width="100%" border="0" cellspacing="0" cellpadding="0" style="border-radius: 4px; ">
               <!-- HERO IMAGE -->
               <tr>
@@ -369,7 +373,7 @@
 <!-- THREE COLUMN SECTION -->
 <table border="0" cellpadding="0" cellspacing="0" width="100%">
   <tr>
-    <td bgcolor="#f1f1f2" align="center" style="padding: 0;">
+    <td bgcolor="#ffffff" align="center" style="padding: 0;">
 
       <!-- FIRST ROW -->
       <table border="0" cellpadding="0" cellspacing="0" width="600" class="responsive-table">
@@ -470,7 +474,7 @@
 <!-- 2 COLUMN SALE CARDS -->
 <table border="0" cellpadding="0" cellspacing="0" width="100%">
     <tr>
-      <td bgcolor="#f1f1f2" align="center" style="padding: 30px 0;">
+      <td bgcolor="#ffffff" align="center" style="padding: 30px 0;">
 
         <!-- FIRST ROW -->
         <table border="0" cellpadding="0" cellspacing="0" width="600" class="responsive-table">
@@ -589,43 +593,23 @@
 <!-- SIGN OFF -->
 <table border="0" cellpadding="0" cellspacing="0" width="100%">
   <tr>
-    <td bgcolor="#f1f1f2" align="center">
-      <table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="600" class="responsive-table" style="border-radius: 4px;">
-        <tr>
-          <td align="center">
-            <!-- BULLETPROOF BUTTON -->
-            <table width="100%" border="0" cellspacing="0" cellpadding="0" class="mobile-button-container">
-              <tr>
-              <td align="center" style="padding: 30px 0 30px; border-bottom: 1px solid #ececec;">
-                  <table border="0" cellspacing="0" cellpadding="0" class="responsive-table">
-                    <tr>
-                      <td align="center">
-                        <a href="#campaign-link" style="font-size: 14px; font-family: Helvetica, Arial, sans-serif, 'Open Sans'; font-weight: 400; color: #ffffff; text-decoration: none; background-color: #ff8c00; border-top: 12px solid #ff8c00; border-bottom: 12px solid #ff8c00; border-left: 24px solid #ff8c00; border-right: 24px solid #ff8c00; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; display: inline-block; letter-spacing: 2px; text-transform: uppercase;">
-                          See More
-                        </a>
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-              </tr>
-            </table>
-          </td>
-        </tr>
+    <td bgcolor="#000000" align="center">
+      <table border="0" cellpadding="0" cellspacing="0" width="600" class="responsive-table" style="border-radius: 4px;">
         <tr>
           <td>
             <table width="100%" border="0" cellspacing="0" cellpadding="0">
               <tr>
-                <td style="font-family: Helvetica, Arial, sans-serif, 'Open Sans'; font-size: 14px; font-weight: 300; color: #333333; text-align: center; line-height: 20px; padding: 30px 30px 3px;">
+                <td style="font-family: Helvetica, Arial, sans-serif, 'Open Sans'; font-size: 14px; font-weight: 400; color: #ffffff; text-align: center; line-height: 20px; padding: 30px 30px 3px;">
                   Best wishes,
                 </td>
               </tr>
               <tr>
-                <td style="font-family: Helvetica, Arial, sans-serif, 'Open Sans'; font-size: 18px; font-weight: 400; color: #333333; text-align: center; line-height: 20px; padding: 0 30px 0;">
+                <td style="font-family: Helvetica, Arial, sans-serif, 'Open Sans'; font-size: 18px; font-weight: 400; color: #ffffff; text-align: center; line-height: 20px; padding: 0 30px 0;">
                   The Secret Escapes Team
                 </td>
               </tr>
               <tr>
-                <td style="font-family: Helvetica, Arial, sans-serif, 'Open Sans'; font-size: 13px; font-weight: 300; color: #333333; text-align:center; line-height: 19px; padding: 7px 20px 30px;">
+                <td style="font-family: Helvetica, Arial, sans-serif, 'Open Sans'; font-size: 13px; font-weight: 400; color: #ffffff; text-align:center; line-height: 19px; padding: 7px 20px 30px;">
                   Any questions? See our<a href="http://www.secretescapes.com/faq" style="text-decoration: none; color: #ff8c00;"> FAQs</a> here.
                 </td>
               </tr>
@@ -642,46 +626,30 @@
 <!-- TERMS & CONDITIONS -->
 <table border="0" cellpadding="0" cellspacing="0" width="100%">
   <tr>
-    <td bgcolor="#f1f1f2" align="center" style="padding: 0 0 20px 0;">
+    <td bgcolor="#000000" align="center" style="padding: 30px 0 20px 0; border-top: 1px solid #444444;">
       <table border="0" cellpadding="0" cellspacing="0" width="600" class="responsive-table">
         <tr>
           <td>
-            <!-- START - bulletproof hr -->
-            <table width="100%" border="0" cellspacing="0" cellpadding="0">
-              <tr>
-                <td align="center">
-                  <table align="center" width="100" border="0" cellspacing="0" cellpadding="0"  style="height:60px;">
-                    <tr>
-                      <td align="center" style="background:none; border-bottom: 1px solid #c1c1c2; height:30px; width:100px; margin-top:0; margin-bottom:0; margin-left:auto; margin-right:auto; padding:0; line-height:0;"><div style="width:100px;"></div></td>
-                    </tr>
-                    <tr>
-                      <td align="center" style="background:none; height:30px; width:100px; margin:0; padding:0; line-height:0;"></td>
-                    </tr>
-                  </table>
-                </td>
-              </tr>
-            </table>
-            <!-- END - bulletproof hr -->
             <!-- COPY -->
             <table width="100%" border="0" cellspacing="0" cellpadding="0">
               <tr>
-                <td align="left" style="padding: 0 15px 0; font-size: 11px; line-height: 15px; font-family: Helvetica, Arial, sans-serif, 'Open Sans'; font-weight: 300; color: #000000; text-align: justify;">
+                  <td align="left" style="padding: 0 15px 0; font-size: 11px; line-height: 15px; font-family: Helvetica, Arial, sans-serif, 'Open Sans'; font-weight: 400; color: #ffffff; text-align: justify;">
                   When we’re not curating luxury escapes, we like to keep an eye out for promotions we think you’ll love – like this one. This email was written by our editorial team in partnership with !!! campaign-client !!!. We hope you enjoyed it.
                 </td>
               </tr>
               <tr>
-                <td align="left" style="padding: 10px 15px 0; font-size: 11px; line-height: 15px; font-family: Helvetica, Arial, sans-serif, 'Open Sans'; font-weight: 300; color: #000000; text-align: justify;">
-                  Clicking our emails will log you into Secret Escapes. To tell friends about the sales it's best to use the share buttons on the site. To get in contact, please email us at <a href="mailto:support@secretescapes.com" style="color:#000000; text-decoration: none; font-weight:400;">support@secretescapes.com</a> or give us a call on <a href="#" style="color:#000000; text-decoration: none; font-weight:400;">0843 22 77 777</a>.
+                <td align="left" style="padding: 10px 15px 0; font-size: 11px; line-height: 15px; font-family: Helvetica, Arial, sans-serif, 'Open Sans'; font-weight: 400; color: #ffffff; text-align: justify;">
+                  Clicking our emails will log you into Secret Escapes. To tell friends about the sales it's best to use the share buttons on the site. To get in contact, please email us at <a href="mailto:support@secretescapes.com" style="color:#ffffff; text-decoration: none; font-weight:400;">support@secretescapes.com</a> or give us a call on <a href="#" style="color:#ffffff; text-decoration: none; font-weight:400;">0843 22 77 777</a>.
                 </td>
               </tr>
               <tr>
-                <td align="left" style="padding: 10px 15px 0; font-size: 11px; line-height: 12px; font-family: Helvetica, Arial, sans-serif, 'Open Sans'; font-weight: 300; color: #000000; text-align: justify;">
-                  England &amp; Wales Company No. <a href="#" style="color:#000000; text-decoration: none;">07026107</a>
+                <td align="left" style="padding: 10px 15px 0; font-size: 11px; line-height: 12px; font-family: Helvetica, Arial, sans-serif, 'Open Sans'; font-weight: 400; color: #ffffff; text-align: justify;">
+                  England &amp; Wales Company No. <a href="#" style="color:#ffffff; text-decoration: none;">07026107</a>
                 </td>
               </tr>
               <tr>
-                <td align="left" style="padding: 10px 15px 30px; font-size: 11px; line-height: 18px; font-family: Helvetica, Arial, sans-serif, 'Open Sans'; font-weight: 300; color: #000000; text-align: justify;">
-                  This email was sent to <a href="#" style="color:#000000; text-decoration: none;">%%EMAIL%%.</a> <a href="http://www.secretescapes.com/your-subscriptions?email=%%EMAIL%%&code=%%REFERENCE%%&utm_source=secretescapes&utm_medium=email&utm_campaign=%%=v(@campaign)=%%%%=v(@GA)=%%" style="text-decoration: none; color: #ff8c00">Unsubscribe here</a>
+                <td align="left" style="padding: 10px 15px 30px; font-size: 11px; line-height: 18px; font-family: Helvetica, Arial, sans-serif, 'Open Sans'; font-weight: 400; color: #ffffff; text-align: justify;">
+                  This email was sent to <a href="#" style="color:#ffffff; text-decoration: none;">%%EMAIL%%.</a> <a href="http://www.secretescapes.com/your-subscriptions?email=%%EMAIL%%&code=%%REFERENCE%%&utm_source=secretescapes&utm_medium=email&utm_campaign=%%=v(@campaign)=%%%%=v(@GA)=%%" style="text-decoration: none; color: #ff8c00">Unsubscribe here</a>
                 </td>
               </tr>
             </table>
@@ -694,12 +662,12 @@
 
 
   <!-- FORCES DESKTOP VERSION ON GMAIL MOBILE -->
-  <table class="mobile-hide" border="0" cellpadding="0" cellspacing="0" width="100%">
+  <table bgcolor="#000000" class="mobile-hide" border="0" cellpadding="0" cellspacing="0" width="100%">
     <tr>
       <td>
         <table cellpadding="0" cellspacing="0" border="0" align="center" width="600px" style="width:600px;">
           <tr>
-            <td cellpadding="0" cellspacing="0" border="0" style="background-color:#ffffff; line-height:1px;" height="1px; min-width: 600px;">
+            <td cellpadding="0" cellspacing="0" border="0" style="line-height:1px;" height="1px; min-width: 600px;">
             <img src="img/blank-600px.png" height="1px" width="600px" style="max-height:1px; min-height:1px; display:block; width:600px; min-width:600px;"/>
             </td>
           </tr>
